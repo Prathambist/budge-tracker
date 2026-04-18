@@ -1,22 +1,18 @@
-<html>
-    <head>
-        <title>login/signup</title>
-       
-        <link rel="stylesheet" href="login.css">
-        <script src="auth.js"></script>
-    </head>
-    <body>
+<form onsubmit="return auth()">
+  <div class="container">
+    <p class="contText">Login</p><br>
 
-        <form onsubmit="return auth()">
-          <div class="container">
-                 <p class="contText">Login</p><br>
-                 Enter e-mail:<input type="email" id="email" placeholder="Enter mail"><br><br>
-                 Enter password:<input type="password" id="password" placeholder="enter pass"><br><br>
-                 <input type="submit" name="submit" id="submit">
-                 <br><br>
+    Enter e-mail:
+    <input type="email" id="email"><br><br>
 
-                 Don't have an account? <button type="button" onclick="window.location.href='signup.html'">signup</button>
-            </div>
-        </form>
-    </body>
-</html>
+    Enter password:
+    <input type="password" id="password"><br><br>
+
+    <input type="submit" value="Login"><br><br>
+
+    Don't have an account?
+    <button type="button" onclick="window.location.href='signup.html'">
+      Signup
+    </button>
+  </div>
+</form>

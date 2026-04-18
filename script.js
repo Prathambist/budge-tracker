@@ -1,6 +1,18 @@
+// const user_id = localStorage.getItem("user_id");
+
+// if (!user_id) {
+//   window.location.href = "login.html";
+// }
+// function logout() {
+//   localStorage.removeItem("user_id");
+//   window.location.href = "login.html";
+// }
+const user_id = 1; // temporary fake user
 document.addEventListener("DOMContentLoaded", () => {
   // === DOM Elements ===
-
+const userDisplay = document.createElement("p");
+userDisplay.textContent = "User ID: " + user_id;
+document.querySelector("header").appendChild(userDisplay);
   // Container for budget cards
   const cardContainer = document.getElementById("card-container");
 
