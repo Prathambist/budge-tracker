@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Budget App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Budget Tracker</h1>
+      <div class="actions">
+        <button id="add-budget-btn" class="btn primary">Add Budget</button>
+        <button id="open-expense-modal-btn" class="btn primary">Add Expense</button>
+      </div>
+    </header>
+
+
+    <div id="card-container" class="card-container"></div>
+  </div>
+
+
+  <div id="budget-modal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Add Budget</h2>
+        <span id="close-budget" class="close">&times;</span>
+      </div>
+      <input type="text" id="budget-name" placeholder="Budget Name" />
+      <input type="number" id="budget-limit" placeholder="Spending Limit" />
+      <button id="submit-budget" class="btn primary">Submit Budget</button>
+    </div>
+  </div>
+
+  <div id="expense-modal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Add Expense</h2>
+        <span id="close-expense" class="close">&times;</span>
+      </div>
+      <input type="text" id="expense-description" placeholder="Expense Description" />
+      <input type="number" id="expense-amount" placeholder="Amount" />
+      <select id="expense-budget"></select>
+      <button id="submit-expense" class="btn primary">Submit Expense</button>
+    </div>
+  </div>
+
+  <div id="expense-details-modal" class="modal hidden">
+   <div id="expense-details-container">
+     <span id="close-expense-details" class="close">&times;</span>
+     <h3>Expenses</h3>
+   </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

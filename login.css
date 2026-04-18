@@ -1,0 +1,17 @@
+.container{
+    padding: 20px;
+    height: 300px;
+    width:450px;
+    background-color: rgb(186, 240, 228);
+    border:2px solid black;
+    margin-top:200px;
+    margin-left: 540px;
+}
+
+p {
+    font-size: large;
+}
+
+body{
+    background-color: aliceblue;
+}
